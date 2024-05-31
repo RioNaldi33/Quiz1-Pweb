@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Kursus / Latihan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Formulir Kursus / Latihan</h2>
+        <form action="formulir_4.html" method="get">
+            <label for="nama_kursus">Nama Kursus / Latihan</label>
+            <input type="text" id="nama_kursus" name="nama_kursus">
+
+            <label for="lama_kursus">Lamanya</label>
+            <input type="text" id="lama_kursus" name="lama_kursus">
+
+            <label for="tgl_mulai">Tanggal Mulai</label>
+            <input type="date" id="tgl_mulai" name="tgl_mulai">
+
+            <label for="tgl_selesai">Tanggal Selesai</label>
+            <input type="date" id="tgl_selesai" name="tgl_selesai">
+
+            <label for="ijazah">Ijazah/Tanda Lulus/Surat Keterangan</label>
+            <input type="text" id="ijazah" name="ijazah">
+
+            <label for="tempat">Tempat</label>
+            <input type="text" id="tempat" name="tempat">
+
+            <label for="keterangan">Keterangan</label>
+            <input type="text" id="keterangan" name="keterangan">
+
+            <div class="buttons">
+                <button type="button" onclick="history.back()">Kembali</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
